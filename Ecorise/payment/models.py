@@ -1,6 +1,6 @@
 from django.db import models
-from trader import Trader
-from recycler import Recyclers
+from trader.models import Trader
+from recycler.models import Recyclers
 
 class Payment(models.Model):
     payment_id = models.CharField(max_length=10, primary_key=True)
